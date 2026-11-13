@@ -1,0 +1,54 @@
+{%- comment -%}
+Tipke „Podijeli” na stranici članka. Obične poveznice (Facebook, WhatsApp, X, Telegram)
+i lokalno kopiranje poveznice. Bez skripti za praćenje i bez trećih servisa osim
+službenih share-URL-ova navedenih mreža.
+{%- endcomment -%}
+{%- assign share_url = page.url | absolute_url -%}
+{%- assign share_url_q = share_url | cgi_escape -%}
+{%- assign share_title_q = page.title | cgi_escape -%}
+<nav class="podijeli" aria-label="Podijeli članak">
+  <p class="podijeli-naslov">Podijeli</p>
+  <ul class="podijeli-popis">
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ share_url_q }}" target="_blank" rel="noopener noreferrer">Facebook</a>
+    </li>
+    <li>
+      <a href="https://api.whatsapp.com/send?text={{ share_title_q }}%20{{ share_url_q }}" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </li>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text={{ share_title_q }}&amp;url={{ share_url_q }}" target="_blank" rel="noopener noreferrer">X</a>
+    </li>
+    <li>
+      <a href="https://t.me/share/url?url={{ share_url_q }}&amp;text={{ share_title_q }}" target="_blank" rel="noopener noreferrer">Telegram</a>
+    </li>
+    <li>
+      <button type="button" class="podijeli-kopiraj" data-url="{{ share_url | escape }}">Kopiraj poveznicu</button>
+    </li>
+  </ul>
+</nav>
+<script>
+(function () {
+  var btn = document.querySelector(".podijeli-kopiraj");
+  if (!btn) return;
+  var original = btn.textContent;
+  btn.addEventListener("click", function () {
+    var url = btn.getAttribute("data-url") || window.location.href;
+    function ok() {
+      btn.textContent = "Kopirano";
+      btn.classList.add("je-kopirano");
+      window.setTimeout(function () {
+        btn.textContent = original;
+        btn.classList.remove("je-kopirano");
+      }, 2000);
+    }
+    function fallback() {
+      window.prompt("Kopiraj poveznicu:", url);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(ok).catch(fallback);
+    } else {
+      fallback();
+    }
+  });
+})();
+</script>
