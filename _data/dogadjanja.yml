@@ -1,4 +1,12 @@
 # DOGAĐANJA – živi popis događaja (stranice /dogadaji/ i /kalendar/ te blok na naslovnici).
 # Upute: _data/README-zaposlenje-dogadjanja.md
 azurirano: 2026-11-13
-dogadjaji: []
+dogadjaji:
+  - naziv: "Humanitarni koncert „Kap kulture na dlanu najpotrebnijih”"
+    datum: 2026-11-15
+    vrijeme: "19:30"
+    mjesto: "Bazilika Gospe Trsatske, Trsat"
+    grad: "Rijeka"
+    organizator: "Udruga Dijamant klasika Rijeka"
+    opis: "Ulaz slobodan. Prilozi za Socijalnu samoposlugu Kruh sv. Elizabete."
+    link: /humanitarni-koncert-trsat-kruh-sv-elizabete/
