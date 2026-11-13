@@ -20,9 +20,11 @@
   <meta property="article:modified_time" content="{{ page.azurirano | date_to_xmlschema }}" />{% endunless %}{% endif %}
   {% feed_meta %}
   <meta name="theme-color" content="#6b2418">
-  <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
-  <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
+  <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" sizes="any">
+  <link rel="icon" href="{{ '/assets/images/favicon-32.png' | relative_url }}" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}" sizes="180x180">
+  <link rel="icon" href="{{ '/assets/images/android-chrome-192x192.png' | relative_url }}" type="image/png" sizes="192x192">
+  <link rel="icon" href="{{ '/assets/images/android-chrome-512x512.png' | relative_url }}" type="image/png" sizes="512x512">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 {%- comment -%} Aktivna stavka navigacije (ista logika za gornju i donju navigaciju) {%- endcomment -%}
@@ -45,7 +47,7 @@
   <header class="site-header" id="site-header">
     <div class="container header-inner">
       <a href="{{ '/' | relative_url }}" class="logo" aria-label="{{ site.title }} – naslovnica">
-        <span class="logo-icon" aria-hidden="true"><img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="" width="36" height="36" class="logo-mark"></span>
+        <span class="logo-icon"><picture><source type="image/webp" srcset="{{ '/assets/images/logo.webp' | relative_url }}"><img src="{{ '/assets/images/logo.png' | relative_url }}" alt="VEŽICA INFO logo" width="48" height="48" class="logo-mark"></picture></span>
         <span class="logo-text">
           <span class="site-title">{{ site.title }}</span>
           <span class="tagline">{{ site.tagline | default: site.description }}</span>
@@ -112,7 +114,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <span class="logo-icon" aria-hidden="true"><img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="" width="36" height="36" class="logo-mark"></span>
+        <span class="logo-icon"><picture><source type="image/webp" srcset="{{ '/assets/images/logo.webp' | relative_url }}"><img src="{{ '/assets/images/logo.png' | relative_url }}" alt="VEŽICA INFO logo" width="40" height="40" class="logo-mark"></picture></span>
         <div>
           <strong>{{ site.title }}</strong>
           <p>{{ site.tagline | default: site.description }}</p>
