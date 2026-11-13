@@ -2,14 +2,15 @@
 layout: post
 title: "MO Pašac: prioritet su ceste, ali proračun ne prati potrebe mještana"
 date: 2026-11-13 19:58:00 +0100
+azurirano: 2026-11-13 21:29:00 +0100
 location: Pašac
 type: Općinske vijesti
 categories: [Pašac, Općinske vijesti]
 description: "Predsjednik Vijeća MO Pašac Alen Fućak kaže da su prioritet ceste, ali da proračun odbora ne prati potrebe mještana zbog visokih cijena komunalnih radova."
 excerpt: "Predsjednik Vijeća Mjesnog odbora Pašac Alen Fućak kaže da se većina aktivnosti odbora odnosi na sanaciju i održavanje prometnica, no da ograničena sredstva i visoke cijene komunalnih radova onemogućuju realizaciju svih potrebnih zahvata."
-image: /assets/images/pasac-naselje-ilustracija.jpg
-image_alt: "Ilustracija brežuljkastog naselja s kućama uz cestu, uz oznaku da je riječ o ilustraciji"
-image_credit: "Ilustracija: VEŽICA INFO. Računalno izrađena grafika; ne prikazuje konkretnu ulicu ni osobe u Pašcu."
+image: /assets/images/pasac-alen-fucak.jpg
+image_alt: "Alen Fućak, predsjednik Vijeća Mjesnog odbora Pašac"
+image_credit: "[Foto: Rijeka Danas](https://www.rijekadanas.com/mjesni-odbori-u-fokusu-pasac-alen-fucak/)"
 ---
 
 U sklopu rubrike „Mjesni odbori u fokusu“ portal [Rijeka Danas](https://www.rijekadanas.com/mjesni-odbori-u-fokusu-pasac-alen-fucak/) 3. studenoga objavio je razgovor s **Alenom Fućkom** (PGS), predsjednikom Vijeća Mjesnog odbora Pašac. Fućak je poručio da su trenutačne aktivnosti i planovi odbora prvenstveno usmjereni na sanaciju i održavanje kolnika, u skladu s iskazanim potrebama stanovnika i raspoloživim novcem. Radovi se, kako je rekao, nastoje realizirati postupno, prema prioritetima.
