@@ -1,0 +1,67 @@
+title: VEŽICA INFO
+description: Lokalni portal istočne Rijeke – vijesti iz Vežice, Svete Katarine, Pašca, Trsata i Drenove.
+tagline: Vijesti iz istočne Rijeke
+baseurl: "/vezica-info"
+url: "https://mojgk.github.io"
+theme: null
+markdown: kramdown
+permalink: /:title/
+timezone: Europe/Zagreb
+lang: hr_HR
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - tools
+  - .github
+
+nav:
+  - title: Početna
+    url: /
+  - title: Događaji
+    url: /dogadaji/
+  - title: Kalendar
+    url: /kalendar/
+  - title: Kategorije
+    url: /kategorije/
+  - title: Povijest
+    url: /povijest/
+  - title: Zaposlenje
+    url: /zaposlenje/
+
+author:
+  name: VEŽICA INFO
+  bio: Lokalni portal istočne Rijeke – vijesti, događanja i priče iz Vežice, Trsata, Drenove i okolice.
+
+ankete:
+  timeout_ms: 4000
+  servis:
+    naziv: countapi
+    get: "https://countapi.mileshilliard.com/api/v1/get/vezicainfo-{kljuc}"
+    hit: "https://countapi.mileshilliard.com/api/v1/hit/vezicainfo-{kljuc}"
+  rezerva:
+    naziv: abacus
+    get: "https://abacus.jasoncameron.dev/get/mojgk.github.io/{kljuc}"
+    hit: "https://abacus.jasoncameron.dev/hit/mojgk.github.io/{kljuc}"
+    timeout_ms: 8000
+
+oglasi_kontakt: ""
+
+# Prazno = brojač isključen (javiti Andreju za kod)
+goatcounter: ""
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+logo: /assets/images/vezica-info-og.jpg
+feed:
+  path: feed.xml
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      image: /assets/images/vezica-info-og.jpg
